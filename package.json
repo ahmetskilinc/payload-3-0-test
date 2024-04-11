@@ -1,0 +1,29 @@
+{
+	"name": "test-repo",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "cross-env NODE_OPTIONS=--no-deprecation next dev --turbo",
+		"devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev --turbo",
+		"build": "cross-env NODE_OPTIONS=--no-deprecation next build",
+		"payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
+		"start": "cross-env NODE_OPTIONS=--no-deprecation next start"
+	},
+	"dependencies": {
+		"@payloadcms/db-mongodb": "3.0.0-beta.0",
+		"@payloadcms/next": "3.0.0-beta.0",
+		"@payloadcms/richtext-lexical": "3.0.0-beta.0",
+		"@payloadcms/ui": "3.0.0-beta.0",
+		"cross-env": "7.0.3",
+		"next": "14.2.0-canary.23",
+		"payload": "3.0.0-beta.0",
+		"react": "18",
+		"react-dom": "18"
+	},
+	"devDependencies": {
+		"@types/node": "20",
+		"@types/react": "18",
+		"@types/react-dom": "18",
+		"typescript": "5"
+	}
+}
